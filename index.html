@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#14281d" />
+    <meta name="description" content="Naina Dhingra is a Carnegie Mellon MISM student turning data and technical problems into practical AI and machine learning solutions. Seeking an AI/ML internship for Summer 2027." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Naina Dhingra — optimizing the interesting bits" />
+    <meta property="og:description" content="Data, AI/ML, and a soft spot for a faster pipeline. Come have a look around." />
+    <meta property="og:image" content="assets/profile/WhatsApp%20Image%202026-08-12%20at%2008.55.43%20(1).jpeg" />
+    <title>Naina Dhingra — Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="content.js" defer></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content"><span id="skip-link-label"></span></a>
+    <div class="boot-screen" id="boot-screen" aria-hidden="true">
+      <div class="boot-window">
+        <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span id="session-window-label"></span></div>
+        <div class="boot-copy" id="boot-copy"></div>
+        <button class="boot-skip" id="boot-skip" type="button"></button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" id="brand-link" href="#home"><span class="brand-mark">nd<span>_</span></span><span class="brand-name" id="brand-name"></span></a>
+        <a class="button button-small button-accent mobile-resume" href="assets/resume/NainaDhingra.pdf" download><span id="mobile-resume-label"></span> <span aria-hidden="true">↓</span></a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i></span><span class="sr-only" id="menu-label"></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav">
+          <div class="nav-links" id="nav-links"></div>
+          <a class="button button-small button-accent resume-link" href="assets/resume/NainaDhingra.pdf" download><span id="desktop-resume-label"></span> <span aria-hidden="true">↓</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <div id="portfolio-root"></div>
+    </main>
+    <div class="cursor-trail" id="cursor-trail" aria-hidden="true"></div>
+    <dialog class="command-dialog" id="command-dialog" aria-labelledby="command-title">
+      <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span id="prompt-window-label"></span><button class="dialog-close" id="dialog-close" type="button">×</button></div>
+      <div class="dialog-content">
+        <p class="eyebrow" id="command-eyebrow"></p>
+        <h2 id="command-title"></h2>
+        <p id="command-description"></p>
+        <form class="command-form" id="command-form">
+          <label class="sr-only" id="command-input-label" for="command-input"></label>
+          <span aria-hidden="true">&gt;</span>
+          <input id="command-input" name="command" autocomplete="off" />
+          <button class="button button-small" id="command-submit" type="submit"></button>
+        </form>
+        <p class="command-output" id="command-output" aria-live="polite"></p>
+      </div>
+    </dialog>
+    <noscript><p class="noscript-note">This portfolio needs JavaScript enabled to render its content.</p></noscript>
+  </body>
+</html>
